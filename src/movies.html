@@ -1,0 +1,62 @@
+<section id="landing__movies">
+  <div class="row">
+    <nav>
+      <img class="nav__logo" src="./assets/watcha lg. (1).png" alt="" />
+      <div class="nav__links">
+        <a
+          class="nav__link--browse link__hover-effect link__hover-effect--white"
+          href="./index.html"
+          >Home</a
+        >
+        <a
+          class="nav__link--browse link__hover-effect link__hover-effect--white"
+          href="#"
+          >Find movie</a
+        >
+        <a class="nav__link--browse nav__btn--browse" href="#">Contact</a>
+      </div>
+    </nav>
+  </div>
+  <header>
+    <div class="row">
+      <div class="header__info">
+        <h1 class="browse__title">Browse your movie</h1>
+        <div class="input__wrapper--browse">
+          <input
+            class="search__input"
+            type="text"
+            placeholder="Search Movie"
+            onchange="onSearchChange(event)"
+          />
+          <button class="btn__search--browse">
+            <i class="fa-solid fa-magnifying-glass icon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <img
+      class="overlay__img"
+      src="https://e0.pxfuel.com/wallpapers/361/985/desktop-wallpaper-dark-blue-background-dark-presentation-thumbnail.jpg"
+      alt=""
+    />
+    <div class="divider"></div>
+  </header>
+</section>
+
+<section>
+  <div class="search__movies">
+    <div class="row">
+      <div class="movies">
+        <div class="movie">
+          <figure class="movie_img--wrapper">
+            <img class="movie_img" src="${movie.Poster}" alt="${movie.Title}" />
+          </figure>
+          <div class="movie_info">
+            <p><b>Title:</b> ${movie.Title}</p>
+            <p><b>Release date:</b> ${movie.Year}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
