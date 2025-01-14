@@ -8,7 +8,7 @@ export default function Movie({ title, poster, year, id }) {
         <figure className="movie__img--wrapper">
           <img className="movie__img" src={poster} />
         </figure>
-        <div className="movie__info">
+        <div className="movie__info--wrapper">
           <h3 className="movie__title">{title}</h3>
           <p className="movie__year">Year: {year}</p>
         </div>

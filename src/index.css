@@ -378,7 +378,7 @@ MOVIES
   height: 280px;
 }
 
-.movie__info {
+.movie__info--wrapper {
   padding: 10px;
 }
 
@@ -398,21 +398,21 @@ SKELETON
 
 */
 
-.skeleton_container {
+.skeleton__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 25px;
 }
 
-.skeleton_movie {
+.skeleton__movie {
   border: 1px solid #ccc;
   border-radius: 8px;
   width: 250px;
   text-align: center;
 }
 
-.skeleton_img {
+.skeleton__img {
   width: 200px;
   height: 280px;
   background-color: #d6d6d6;
@@ -421,11 +421,11 @@ SKELETON
   display: inline-block;
 }
 
-.skeleton_info {
+.skeleton__info {
   padding: 10px;
 }
 
-.skeleton_title {
+.skeleton__title {
   width: 60%;
   height: 18px;
   background-color: #d6d6d6;
@@ -433,7 +433,7 @@ SKELETON
   border-radius: 4px;
 }
 
-.skeleton_year {
+.skeleton__year {
   width: 40%;
   height: 14px;
   background-color: #d6d6d6;
@@ -487,8 +487,8 @@ MOVIESINFO
 }
 
 .movie__info {
-  margin-bottom: 15px 0px;
-  max-width: 500px;
+  margin-left: 25px;
+  max-width: 400px;
 }
 
 .movie__details img {
