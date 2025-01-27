@@ -10,9 +10,8 @@ export default function Movies() {
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(false);
   const [query, setQuery] = useState("");
-
-  const [searchParams] = useSearchParams()
-  const searchQuery = searchParams.get('search') || "";
+  const [searchParams] = useSearchParams();
+  const searchQuery = searchParams.get("search") || "";
 
   useEffect(() => {
     async function fetchMovies(query) {
@@ -28,6 +27,7 @@ export default function Movies() {
           `https://www.omdbapi.com/?apikey=e1e9d522&s=$${query || searchQuery}`
         );
         setMovies(data.Response === "True" ? data.Search || [] : []);
+    
       } catch {
         setMovies([]);
       } finally {
@@ -40,26 +40,26 @@ export default function Movies() {
   return (
     <>
       <section id="landing__movies">
-          <nav>
-            <img className="nav__logo" src={WatchaLg} alt="" />
-            <div className="nav__links">
-              <Link
-                to="/"
-                className="nav__link--browse link__hover-effect link__hover-effect--white"
-              >
-                Home
-              </Link>
-              <Link
-                className="nav__link--browse link__hover-effect link__hover-effect--white"
-                href="#"
-              >
-                Find movie
-              </Link>
-              <Link className="nav__link--browse nav__btn--browse" href="#">
-                Contact
-              </Link>
-            </div>
-          </nav>
+        <nav>
+          <img className="nav__logo" src={WatchaLg} alt="" />
+          <div className="nav__links">
+            <Link
+              to="/"
+              className="nav__link--browse link__hover-effect link__hover-effect--white"
+            >
+              Home
+            </Link>
+            <Link
+              className="nav__link--browse link__hover-effect link__hover-effect--white"
+              href="#"
+            >
+              Find movie
+            </Link>
+            <Link className="nav__link--browse nav__btn--browse" href="#">
+              Contact
+            </Link>
+          </div>
+        </nav>
         <header>
           <div className="row">
             <div className="header__info">
